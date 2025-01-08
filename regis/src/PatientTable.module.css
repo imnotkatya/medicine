@@ -1,0 +1,185 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.all {
+    padding: 20px;
+    font-family: "Nunito Sans", sans-serif;
+
+    
+}
+
+/* Styling for the header section */
+header {
+    display: flex;
+ gap: 10px;
+    justify-content: flex-start;
+   
+}
+::placeholder {
+    
+    color: rgb(114, 114, 114);
+    opacity: 1; /* Firefox */
+  }
+.search
+{
+    margin-top: 10px;
+border-radius: 5px  ;
+    flex: 2;
+border: 1px black solid;
+height: 100%;
+padding: 10px ;
+
+}
+
+/* Основной контейнер для выпадающего списка */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Кнопка выпадающего списка */
+  .dropdown button {
+    max-width: 200px;
+    
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Стили для контента выпадающего списка */
+  .content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  
+  /* Показ контента при наведении */
+  .dropdown:hover .content {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Кнопки в выпадающем списке */
+  .content button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Стиль при наведении на кнопки */
+  .content button:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+.links_s,.SortBut
+{
+   
+    max-width: 200px;
+    margin-top: 10px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+.links_s a
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+ 
+    
+
+}
+.links a:hover {
+    color: #0056b3;
+}
+
+
+.all_data_table {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+
+.table_pat {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 50rem;
+}
+
+.table_pat thead {
+    background-color: rgb(191, 208, 223);
+}
+
+.table_pat th, 
+.table_pat td {
+    padding: 15px;
+    text-align: left;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.table_pat th {
+    background-color: rgb(191, 208, 223);
+    font-weight: 700;
+}
+
+/* Hover effect for table rows */
+.PatientItem:hover {
+    background-color: rgb(47, 68, 86);
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .table_pat {
+        min-width: auto;
+    }
+    
+    .table_pat th, 
+    .table_pat td {
+        padding: 10px;
+    }
+}
